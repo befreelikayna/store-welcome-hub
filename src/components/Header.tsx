@@ -9,7 +9,7 @@ const Header: React.FC = () => {
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center gap-2">
           <Menu className="h-6 w-6 md:hidden" />
-          <h1 className="text-2xl font-bold text-shop-primary">متجر المطبخ</h1>
+          <h1 className="text-2xl font-bold text-shop-primary">باسما شوب</h1>
         </div>
 
         <nav className="hidden md:flex items-center gap-6">

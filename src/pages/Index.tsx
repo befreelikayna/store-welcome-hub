@@ -9,6 +9,11 @@ import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
 
 const Index = () => {
+  // Update the page title
+  React.useEffect(() => {
+    document.title = "باسما شوب | أفضل أدوات المطبخ";
+  }, []);
+
   return (
     <div className="min-h-screen flex flex-col">
       <Header />

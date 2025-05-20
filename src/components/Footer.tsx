@@ -7,7 +7,7 @@ import {
   Youtube,
   MapPin,
   Phone,
-  Mail
+  MessageCircle
 } from 'lucide-react';
 
 const Footer: React.FC = () => {
@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div>
-            <h3 className="text-xl font-bold mb-4">متجر المطبخ</h3>
+            <h3 className="text-xl font-bold mb-4">باسما شوب</h3>
             <p className="text-gray-400 mb-4">
               نوفر لكم أفضل أدوات المطبخ بجودة عالية وأسعار مناسبة، لتجربة طهي مميزة.
             </p>
@@ -69,18 +69,18 @@ const Footer: React.FC = () => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-shop-accent" />
-                <span className="text-gray-400">+966 123 456 789</span>
+                <a href="tel:+447308658080" className="text-gray-400 hover:text-white">+44 7308 658080</a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-shop-accent" />
-                <span className="text-gray-400">info@kitchen-shop.com</span>
+                <MessageCircle className="h-5 w-5 text-shop-accent" />
+                <a href="mailto:bassmashop@gmail.com" className="text-gray-400 hover:text-white">bassmashop@gmail.com</a>
               </li>
             </ul>
           </div>
         </div>
 
         <div className="pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} متجر المطبخ. جميع الحقوق محفوظة</p>
+          <p>&copy; {new Date().getFullYear()} باسما شوب. جميع الحقوق محفوظة</p>
         </div>
       </div>
     </footer>

@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { ShoppingCart, Star } from 'lucide-react';
+import { MessageCircle, Star } from 'lucide-react';
 
 const products = [
   {
@@ -55,6 +55,13 @@ const products = [
 ];
 
 const ProductsSection = () => {
+  const handleWhatsAppClick = (productName: string) => {
+    const message = `مرحباً، أنا مهتم بشراء ${productName}. هل يمكنني معرفة المزيد؟`;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/447308658080?text=${encodedMessage}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <section id="products" className="py-16">
       <div className="container mx-auto">
@@ -90,9 +97,13 @@ const ProductsSection = () => {
                 </div>
                 <div className="flex items-center justify-between mt-2">
                   <span className="text-xl font-bold text-shop-primary">{product.price} ر.س</span>
-                  <Button size="sm" className="bg-shop-primary hover:bg-shop-primary/90">
-                    <ShoppingCart className="h-4 w-4 mr-1" />
-                    إضافة للسلة
+                  <Button 
+                    size="sm" 
+                    className="bg-green-600 hover:bg-green-700"
+                    onClick={() => handleWhatsAppClick(product.name)}
+                  >
+                    <MessageCircle className="h-4 w-4 mr-1" />
+                    طلب عبر واتساب
                   </Button>
                 </div>
               </div>
@@ -101,7 +112,10 @@ const ProductsSection = () => {
         </div>
 
         <div className="text-center mt-12">
-          <Button className="bg-shop-primary hover:bg-shop-primary/90 px-8">
+          <Button 
+            className="bg-shop-primary hover:bg-shop-primary/90 px-8"
+            onClick={() => window.open('https://wa.me/447308658080', '_blank')}
+          >
             عرض جميع المنتجات
           </Button>
         </div>
