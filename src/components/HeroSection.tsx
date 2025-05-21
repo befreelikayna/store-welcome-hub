@@ -2,6 +2,7 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, ShoppingCart } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
@@ -16,12 +17,16 @@ const HeroSection = () => {
               وفر الوقت والجهد مع أحدث أدوات المطبخ العصرية. منتجات عالية الجودة لتجربة طهي مثالية.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-shop-primary hover:bg-shop-primary/90 flex items-center gap-2">
-                تسوق الآن <ShoppingCart className="h-4 w-4 mr-1" />
-              </Button>
-              <Button variant="outline" className="text-shop-primary border-shop-primary hover:bg-shop-primary/10 flex items-center gap-2">
-                استكشف المنتجات <ArrowLeft className="h-4 w-4" />
-              </Button>
+              <Link to="/products">
+                <Button className="bg-shop-primary hover:bg-shop-primary/90 flex items-center gap-2 w-full sm:w-auto">
+                  تسوق الآن <ShoppingCart className="h-4 w-4 mr-1" />
+                </Button>
+              </Link>
+              <Link to="/products">
+                <Button variant="outline" className="text-shop-primary border-shop-primary hover:bg-shop-primary/10 flex items-center gap-2 w-full sm:w-auto">
+                  استكشف المنتجات <ArrowLeft className="h-4 w-4" />
+                </Button>
+              </Link>
             </div>
             <div className="pt-4 flex items-center justify-start gap-6">
               <div>

@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { 
   Facebook, 
   Twitter, 
@@ -39,24 +40,23 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">روابط سريعة</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">الرئيسية</a></li>
-              <li><a href="#products" className="text-gray-400 hover:text-white transition-colors">منتجاتنا</a></li>
-              <li><a href="#features" className="text-gray-400 hover:text-white transition-colors">مميزاتنا</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">من نحن</a></li>
-              <li><a href="#testimonials" className="text-gray-400 hover:text-white transition-colors">آراء العملاء</a></li>
-              <li><a href="#contact" className="text-gray-400 hover:text-white transition-colors">اتصل بنا</a></li>
+              <li><Link to="/" className="text-gray-400 hover:text-white transition-colors">الرئيسية</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">منتجاتنا</Link></li>
+              <li><Link to="/features" className="text-gray-400 hover:text-white transition-colors">مميزاتنا</Link></li>
+              <li><Link to="/testimonials" className="text-gray-400 hover:text-white transition-colors">آراء العملاء</Link></li>
+              <li><Link to="/contact" className="text-gray-400 hover:text-white transition-colors">اتصل بنا</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-xl font-bold mb-4">فئات المنتجات</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">أجهزة المطبخ</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">أدوات التقطيع</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">أجهزة الطبخ</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">أدوات التنظيف</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">مستلزمات الخبز</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-white transition-colors">أواني الطهي</a></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">أجهزة المطبخ</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">أدوات التقطيع</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">أجهزة الطبخ</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">أدوات التنظيف</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">مستلزمات الخبز</Link></li>
+              <li><Link to="/products" className="text-gray-400 hover:text-white transition-colors">أواني الطهي</Link></li>
             </ul>
           </div>
 
