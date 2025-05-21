@@ -2,6 +2,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, Phone, MapPin, Mail } from 'lucide-react';
 
@@ -42,7 +43,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold">رقم الهاتف</h3>
-                  <p className="text-gray-600">+44 7308 658080</p>
+                  <p className="text-gray-600 ltr:text-left" dir="ltr">+44 7308 658080</p>
                 </div>
               </div>
               
@@ -123,6 +124,7 @@ const Contact = () => {
         </div>
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

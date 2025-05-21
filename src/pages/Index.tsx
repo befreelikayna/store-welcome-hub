@@ -7,6 +7,7 @@ import ProductsSection from '../components/ProductsSection';
 import TestimonialsSection from '../components/TestimonialsSection';
 import CTASection from '../components/CTASection';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Index = () => {
   // Update the page title
@@ -25,6 +26,7 @@ const Index = () => {
         <CTASection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

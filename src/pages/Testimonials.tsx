@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import TestimonialsSection from '../components/TestimonialsSection';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Testimonials = () => {
   // Update the page title
@@ -25,6 +26,7 @@ const Testimonials = () => {
         <TestimonialsSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

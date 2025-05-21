@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import ProductsSection from '../components/ProductsSection';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Products = () => {
   // Update the page title
@@ -25,6 +26,7 @@ const Products = () => {
         <ProductsSection showAllProducts={true} />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

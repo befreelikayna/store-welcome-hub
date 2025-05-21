@@ -3,6 +3,7 @@ import React from 'react';
 import Header from '../components/Header';
 import FeaturesSection from '../components/FeaturesSection';
 import Footer from '../components/Footer';
+import WhatsAppButton from '../components/WhatsAppButton';
 
 const Features = () => {
   // Update the page title
@@ -25,6 +26,7 @@ const Features = () => {
         <FeaturesSection />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
